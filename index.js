@@ -14,7 +14,7 @@ module.exports = () => {
   return {
     name: "netlify-plugin-image-optim",
 
-    postBuild: async config => {
+    onPostBuild: async config => {
       const files = {};
       const glob = `${config.constants.BUILD_DIR}/**/*.{gif,jpg,jpeg,png,svg}`;
       const paths = await globby(glob);
