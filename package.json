@@ -16,17 +16,17 @@
     "url": "https://github.com/chrisdwheatley/netlify-plugin-image-optim/issues"
   },
   "dependencies": {
-    "boxen": "^4.1.0",
+    "boxen": "^4.2.0",
     "chalk": "^2.4.2",
-    "filesize": "^6.0.0",
-    "globby": "^10.0.1",
-    "imagemin": "^7.0.0",
+    "filesize": "^6.1.0",
+    "globby": "^10.0.2",
+    "imagemin": "^7.0.1",
     "imagemin-gifsicle": "^6.0.1",
     "imagemin-jpegtran": "^6.0.0",
     "imagemin-keep-folder": "^5.3.2",
     "imagemin-optipng": "^7.1.0",
     "imagemin-pngquant": "^8.0.0",
-    "imagemin-svgo": "^7.0.0",
+    "imagemin-svgo": "^7.1.0",
     "table": "^5.4.6"
   },
   "keywords": [
