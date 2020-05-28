@@ -11,8 +11,6 @@ const pngquant = require("imagemin-pngquant");
 const svgo = require("imagemin-svgo");
 
 module.exports = {
-    name: "netlify-plugin-image-optim",
-
     onPostBuild: async config => {
       const files = {};
       const glob = `${config.constants.BUILD_DIR}/**/*.{gif,jpg,jpeg,png,svg}`;
