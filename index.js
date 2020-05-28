@@ -10,8 +10,7 @@ const optipng = require("imagemin-optipng");
 const pngquant = require("imagemin-pngquant");
 const svgo = require("imagemin-svgo");
 
-module.exports = () => {
-  return {
+module.exports = {
     name: "netlify-plugin-image-optim",
 
     onPostBuild: async config => {
@@ -80,5 +79,4 @@ module.exports = () => {
         })
       );
     }
-  };
 };
