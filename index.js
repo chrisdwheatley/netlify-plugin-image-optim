@@ -10,9 +10,8 @@ const optipng = require("imagemin-optipng");
 const pngquant = require("imagemin-pngquant");
 const svgo = require("imagemin-svgo");
 
-module.exports = () => {
-  return {
-    postBuild: async config => {
+module.exports = {
+    onPostBuild: async config => {
       const files = {};
       const glob = `${config.constants.BUILD_DIR}/**/*.{gif,jpg,jpeg,png,svg}`;
       const paths = await globby(glob);
@@ -78,5 +77,4 @@ module.exports = () => {
         })
       );
     }
-  };
 };

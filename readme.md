@@ -8,15 +8,11 @@ Optimize images as part of your Netlify build process. Optimizes PNG, JPEG, GIF 
 
 ## Install
 
-```
-npm i netlify-plugin-image-optim
+To install, add the following lines to your `netlify.toml` file:
+
+```toml
+[[plugins]]
+package = "netlify-plugin-image-optim"
 ```
 
-## Use
-
-Add as a plugin to your Netlify config file.
-
-```yaml
-plugins:
-  - type: "netlify-plugin-image-optim"
-```
+Note: The `[[plugins]]` line is required for each plugin, even if you have other plugins in your `netlify.toml` file already.

@@ -1,6 +1,6 @@
 {
   "name": "netlify-plugin-image-optim",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Optimize images as part of your Netlify build process.",
   "main": "index.js",
   "scripts": {
@@ -29,6 +29,7 @@
   "keywords": [
     "image optimization",
     "netlify",
-    "netlify plugin"
+    "netlify plugin",
+    "netlify-plugin"
   ]
 }
