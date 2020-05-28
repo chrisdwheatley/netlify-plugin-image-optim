@@ -13,7 +13,7 @@ const svgo = require("imagemin-svgo");
 module.exports = {
     onPostBuild: async config => {
       const files = {};
-      const glob = `${config.constants.BUILD_DIR}/**/*.{gif,jpg,jpeg,png,svg}`;
+      const glob = `${config.constants.PUBLISH_DIR}/**/*.{gif,jpg,jpeg,png,svg}`;
       const paths = await globby(glob);
 
       paths.map(path => {
@@ -46,7 +46,7 @@ module.exports = {
 
       const formattedData = Object.keys(files).map(filename => {
         return [
-          filename.replace(config.constants.BUILD_DIR, ""),
+          filename.replace(config.constants.PUBLISH_DIR, ""),
           red(filesize(files[filename].pre)),
           green(filesize(files[filename].post)),
           green.bold(filesize(files[filename].diff))
